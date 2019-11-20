@@ -3,15 +3,121 @@
     <head>
         <title>Testpagina</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
         <style>
+            .sidebar {
+            height: 100%;
+            width: 220px;
+            position: fixed;
+            z-index: 0;
+            top: 0;
+            left: 0;
+            background-color: black;
+            overflow: hidden;
+            padding-top: 20px;
+            text-align: center;
+            vertical-align: middle;
+            }
+            .sidebar a {
+            background-color: black; 
+            color: white; 
+            display: block; 
+            padding: 12px;
+            text-decoration: none; 
+            }
+            .sidebar a:hover {
+            color: #d4d4d4;
+            transition: ease-in-out .2s;
+            text-decoration: underline;
+            }
+            .main {
+            margin-left: 290px;
+            margin-top: 30px;
+            font-size:  25px;
+            padding: 0px 10px;
+            }
+            table {
+            border-collapse: collapse;
+            width: 700px;
+            margin-left: 300px;
+            margin-top: 60px;
+            font-weight: bold;
+            font-size: 21px;
+            }
+            .blank_row {
+                height: 20px !important;
+                background-color: #FFFFFF;
+            }
 
+            .active {
+                background-color: #11ff00;
+                border-radius: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .deactive {
+                background-color: #ff1111;
+                border-radius: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .btn-outline-success{
+                width: 110px;
+            }
+            .btn-outline-danger{
+                width: 110px;
+            }
         </style>
+        
     </head>
     <body>
 
     <div class="container-fluid">
-        <!-- Hierin komt de html code -->
+        <div class="sidebar">
+                <img src="logo-white.png" alt="Simply Easy Learning" width="120"
+                height="120">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#klanten">Klanten</a>
+                <a href="#checkers">Checkers</a>
+                <a href="#instellningen">Settings</a>
+        </div>
+        <div class="main">
+        <h1><b>Checker</b></h1>
+        </div>
+        <table>
+            <tr>
+                <td>Naam</td>
+                <td>Code</td>
+                <td>Status</td>
+            </tr>
+            <tr class="blank_row">
+                    <td colspan="3"></td>
+            </tr>
+            <tr>
+                <td>SoilChecker01</td>
+                <td>24208090</td>
+                <td>geactiveerd</td>
+                <td><button class="btn btn-outline-danger">Deactiveren</button></td>
+            </tr>
+            <tr>
+                <td>SoilChecker02</td>
+                <td>24208091</td>
+                <td>gedeactiveerd</td>
+                <td><button class="btn btn-outline-success">Activeren</button></td>
+            </tr>
+            <tr>
+                <td>SoilChecker03</td>
+                <td>24208094</td>
+                <td>geactiveerd</td>
+                <td><button class="btn btn-outline-danger">Deactiveren</button></td>
+            </tr>
+            <tr>
+                <td>SoilChecker04</td>
+                <td>24208020</td>
+                <td>geactiveerd</td>
+                <td><button class="btn btn-outline-danger">Deactiveren</button></td>
+            </tr>
+        </table>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
