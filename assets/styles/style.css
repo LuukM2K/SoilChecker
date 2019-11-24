@@ -1,0 +1,75 @@
+.soilcheck-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin: auto;
+}
+
+.header-soil--brown {
+    color: #8E5A1F;
+}
+
+.header-check--blue {
+    color: #5580B5;
+}
+
+.navbar-container {
+    background-color: #000000;
+    height: 600px;
+}
+
+.navbar-container div {
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.content-container {
+    background-color: #F9FAFF;
+    height: 600px;
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.navbar-list li {
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+.navbar-list a {
+    color: white;
+}
+
+.navbar-list a:hover {
+    color: #5580B5;
+}
+
+.gegevens-title {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+}
+
+.gegevens-container ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.gegevens-container p {
+    font-weight: 600;
+}
+
+.soilchecker-nummers button {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 14px;
+    margin-right: 6px;
+}
+
+.soilchecker-nummers span {
+    margin-right: 70px;
+    display: inline-block;
+    width: 30px;
+}
