@@ -5,16 +5,8 @@
 
 .container-fluid {
 	display: flex;
-}
-
-.left-container {
-	border: 1px solid #001f3f;
-	width: 350px;
-	height: 650px;
-	padding: 26px;
-	margin-top: 150px;
-	margin-left: 200px;
-
+	align-items: center;
+	justify-content: center;
 }
 
 .recent {
@@ -25,7 +17,6 @@
 
 table {
 	/*border: 1px solid #001f3f;*/
-
 }
 
 td {
@@ -63,7 +54,6 @@ margin-top: 20px;
 	height: 650px;
 	width: 1125px;
 	margin-top: 150px;
-	margin-left: 75px;
 }
 
 .container-titles {
